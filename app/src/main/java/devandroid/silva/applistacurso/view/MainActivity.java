@@ -5,13 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import devandroid.silva.applistacurso.R;
-import devandroid.silva.applistacurso.model.Curso;
+import devandroid.silva.applistacurso.model.Construcao;
 import devandroid.silva.applistacurso.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
 
     Pessoa pessoa;
-    Curso curso;
+    Pessoa outraPessoa;
+
+    Construcao construcao;
 
 
     @Override
@@ -20,7 +22,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         pessoa = new Pessoa();
-        curso = new Curso();
+        //Atribuir conteudo, dados, valores para o Objeto
+        //Conforme o seu MODELO, TEMPLATE
+        pessoa.setPrimeiroNome("Douglas");
+        pessoa.setSobreNome("Silva Santos");
+        pessoa.setCursoDesejado("Android");
+        pessoa.setTelefoneContato("11-979565411");
+
+         outraPessoa = new Pessoa();
+         outraPessoa.setPrimeiroNome("Nadabe");
+         outraPessoa.setSobreNome("Maximo da Silva");
+         outraPessoa.setCursoDesejado("Java");
+         outraPessoa.setTelefoneContato("11-15615615.");
+
+         construcao = new Construcao();
+         construcao.setTipoDeTrabalho("Drywall");
+         construcao.setTamanhoDotrabalho("Grande");
+         construcao.setTelefoneContato("8628462889");
+
+
+        int parada = 0;
 
     }
 }

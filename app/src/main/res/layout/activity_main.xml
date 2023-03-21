@@ -26,11 +26,11 @@
         android:layout_margin="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_primeiro_nome"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloApp"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloApp" />
 
     <EditText
         android:id="@+id/editSobrenome"
@@ -39,12 +39,12 @@
         android:layout_margin="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_sobrenome"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:importantForAutofill="no"
-        app:layout_constraintTop_toBottomOf="@+id/editnome" />
+        app:layout_constraintTop_toBottomOf="@+id/editnome"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editcurso_desejado"
@@ -67,11 +67,11 @@
         android:layout_margin="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_telefone_contato"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editcurso_desejado"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/editcurso_desejado" />
 
     <Button
         android:id="@id/btnLimpar"
@@ -90,6 +90,7 @@
         android:layout_marginStart="156dp"
         android:text="@string/txt_button_salvar"
         app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnLimpar"
         app:layout_constraintTop_toBottomOf="@+id/edittelefone_contato" />
 
@@ -102,7 +103,7 @@
         android:text="@string/txt_button_finalizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittelefone_contato"
-        tools:layout_editor_absoluteX="6dp"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="VisualLintButtonSize"
+        tools:layout_editor_absoluteX="6dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

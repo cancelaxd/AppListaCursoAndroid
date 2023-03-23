@@ -7,7 +7,7 @@ public class Pessoa {
     //Metodos de acesso - Getts and Setts
 
     private String primeiroNome;
-    private String sobreNome;
+    private String sobreNome; //essas 4 linhas de string sao os ATRIBUTOS
     private String cursoDesejado;
     private String telefoneContato;
 
@@ -43,9 +43,18 @@ public class Pessoa {
         this.telefoneContato = telefoneContato;
     }
 
-    public Pessoa(){
+    public Pessoa(){}
+
+    // To String - Para textos - Para Strings de caracteres
 
 
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "primeiroNome='" + primeiroNome + '\'' +
+                ", sobreNome='" + sobreNome + '\'' +
+                ", cursoDesejado='" + cursoDesejado + '\'' +
+                ", telefoneContato='" + telefoneContato + '\'' +
+                '}';
     }
-
 }

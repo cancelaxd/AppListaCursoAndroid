@@ -29,4 +29,14 @@ public class Construcao {
     public void setTelefoneContato(String telefoneContato) {
         this.telefoneContato = telefoneContato;
     }
+
+    @Override
+    public String toString() {
+        return "Construcao{" +
+                "tipoDeTrabalho='" + tipoDeTrabalho + '\'' +
+                ", tamanhoDotrabalho='" + tamanhoDotrabalho + '\'' +
+                ", telefoneContato='" + telefoneContato + '\'' +
+                '}';
+    }
+
 }

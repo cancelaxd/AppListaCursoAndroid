@@ -38,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         pessoa = new Pessoa();
-        //Atribuir conteudo, dados, valores para o Objeto
-        //Conforme o seu MODELO, TEMPLATE
         pessoa.setPrimeiroNome("Douglas");
         pessoa.setSobreNome("Silva Santos");
         pessoa.setCursoDesejado("Android");
@@ -65,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
         dadosPessoa += " Telefone de Contato: ";
         dadosPessoa += pessoa.getTelefoneContato();
 
-
         dadosOutraPessoa = "Primeiro nome: ";
         dadosOutraPessoa += outraPessoa.getPrimeiroNome();
         dadosOutraPessoa += " Sobrenome: ";
@@ -83,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
         btnLimpar = findViewById(R.id.btnLimpar);
         btnSalvar = findViewById(R.id.btnSalvar);
         btnFinalizar = findViewById(R.id.btnFinalizar);
-
 
         editnome.setText(outraPessoa.getPrimeiroNome());
         editSobrenome.setText(outraPessoa.getSobreNome());
@@ -115,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setCursoDesejado(editcurso_desejado.getText().toString());
                 pessoa.setTelefoneContato(edittelefone_contato.getText().toString());
 
-                Toast.makeText(MainActivity.this, "Salvo"+pessoa.toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Salvo" + pessoa.toString(), Toast.LENGTH_LONG).show();
 
             }
         });
@@ -123,7 +119,6 @@ public class MainActivity extends AppCompatActivity {
         Log.i("POOAndroid", "Objeto pessoa: " + pessoa.toString());
         Log.i("POOAndroid", "Objeto outraPessoa: " + outraPessoa.toString());
         Log.i("POOAndroid", "Objeto construcao: " + construcao.toString());
-        int parada = 0;
 
     }
 }

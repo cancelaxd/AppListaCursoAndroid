@@ -1,5 +1,7 @@
 package devandroid.silva.applistacurso.model;
 
+import androidx.annotation.NonNull;
+
 public class Pessoa {
 
     //Construtor
@@ -48,6 +50,7 @@ public class Pessoa {
     // To String - Para textos - Para Strings de caracteres
 
 
+    @NonNull
     @Override
     public String toString() {
         return "Pessoa{" +

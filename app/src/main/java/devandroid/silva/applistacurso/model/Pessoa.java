@@ -21,6 +21,7 @@ public class Pessoa {
 
         this.primeiroNome = primeiroNome;
     }
+
     public String getSobreNome() {
         return sobreNome;
     }
@@ -45,7 +46,8 @@ public class Pessoa {
         this.telefoneContato = telefoneContato;
     }
 
-    public Pessoa(){}
+    public Pessoa() {
+    }
 
     // To String - Para textos - Para Strings de caracteres
 
